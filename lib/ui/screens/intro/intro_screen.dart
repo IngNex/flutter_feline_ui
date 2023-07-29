@@ -49,7 +49,7 @@ class IntroScreen extends StatelessWidget {
             right: 20,
             child: GestureDetector(
               onTap: () {
-                Navigator.of(context).push(PageRouteBuilder(
+                Navigator.of(context).pushReplacement(PageRouteBuilder(
                   transitionDuration: const Duration(milliseconds: 650),
                   pageBuilder: (context, animation, _) {
                     return FadeTransition(
